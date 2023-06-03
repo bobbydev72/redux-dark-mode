@@ -7,7 +7,7 @@ export const Header: React.FC = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           <Link href="/" className="uppercase dark:text-white">
-            Redux Dark Theme
+            Redux Dark Mode
           </Link>
           <ThemeSwitcher />
         </div>

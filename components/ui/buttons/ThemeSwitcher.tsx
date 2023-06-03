@@ -3,7 +3,7 @@ import { themeSelector } from '../../../redux/theme/selectors';
 import { setTheme } from '../../../redux/theme/actionCreators';
 import Image from 'next/image';
 
-export const ThemeSwitcher: React.FC = ({}) => {
+export const ThemeSwitcher: React.FC = () => {
   const theme = useSelector(themeSelector);
 
   const dispatch = useDispatch();

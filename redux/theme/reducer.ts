@@ -8,6 +8,9 @@ interface SetThemeAction extends Action {
 
 const initialState = '';
 
+// TODO: create save theme in localStorage or Cookie
+// const initialState = window.localStorage.getItem('theme') || '';
+
 export function themeReducer(
   state: string = initialState,
   action: SetThemeAction
