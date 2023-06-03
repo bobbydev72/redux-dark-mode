@@ -1,15 +1,14 @@
-import { Provider } from 'react-redux';
-import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { store } from '../redux';
+import { Provider, useSelector } from 'react-redux';
+import { themeSelector } from '../redux/theme/selectors';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="dark">
-      <Provider store={store}>
-        <Component {...pageProps} />
-      </Provider>
-    </div>
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
   );
 }
 
