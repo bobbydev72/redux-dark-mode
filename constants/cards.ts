@@ -1,4 +1,4 @@
-import { dummyCardsProps } from '@/types/modules/cards';
+import { dummyCardsProps } from '../types/modules/cards';
 
 export const dummyCards: dummyCardsProps[] = [
   {
